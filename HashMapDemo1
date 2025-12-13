@@ -1,0 +1,28 @@
+import java.util.HashMap;
+import java.util.Set;
+public class HashMapDemo1 {
+    public static void main(String[] args)
+    {
+        HashMap<String,Integer> marks=new HashMap<>();
+        marks.put("DMGT",30);
+        marks.put("ADSA",28);
+        marks.put("DBMS",28);
+        marks.put("UHV",27);
+        marks.put("OOPS",30);
+        marks.put("PP",30);
+        marks.put("ADSA LAB",30);
+        marks.put("OOPS LAB",30);
+        System.out.println(marks);
+        Set<String> allkeys=marks.keySet();
+        for(String m:allkeys)
+        {
+            System.out.println(marks.get(m));
+        }
+        System.out.println(marks);
+        System.out.println(marks.size());
+        System.out.println(marks.containsValue(28));
+        System.out.println(marks.containsKey("OOPS"));
+        System.out.println(marks.isEmpty());
+        System.out.println(marks.values());
+    }
+}
