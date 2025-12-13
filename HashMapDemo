@@ -1,0 +1,28 @@
+import java.util.HashMap;
+import java.util.Set;
+public class HashMapDemo {
+    public static void main(String[] args)
+    {
+        HashMap<Integer,String> h=new HashMap<>();
+        h.put(1,"Srinumagam");
+        h.put(2,"Raja S");
+        h.put(3,"MahendraReddy");
+        h.put(4,"ManiDeepak");
+        h.put(1,"AshokReddy");
+        System.out.println(h);
+        System.out.println(h.get(4));
+        System.out.println(h.containsKey(5));
+        System.out.println(h.size());
+        System.out.println(h.containsValue("Sumalatha"));
+        System.out.println(h.getClass());
+        System.out.println(h.putIfAbsent(4,"dh"));
+        Set<Integer> allkeys=h.keySet();
+        for(Integer i:allkeys)
+        {
+            System.out.println(h.get(i));
+        }
+        System.out.println(h.values());
+        System.out.println(h.get(4));
+        System.out.println(h.hashCode());
+    }
+}
